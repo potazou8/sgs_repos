@@ -1,5 +1,17 @@
 <html>
+<script src="js/app.js"></script>
 <script>
+window.onload = function()
+{
+    console.log("test");
+}
+
+onmousemove = function(e)
+{
+    var x = e.offsetX;//.screenX;
+    var y = e.offsetY;
+    console.log(x+","+y);
+}
 </script>
 <body>
 <canvas id="canvas" style="background-color: blue;" width="800" height="640">
